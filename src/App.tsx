@@ -1,8 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch.Auth.getAllPosts("", (data: any) => {
+      console.log(data, "callback-----------------");
+    });
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
