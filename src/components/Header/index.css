@@ -1,0 +1,10 @@
+.header .headerTopBar {
+  width: 100%;
+  padding: 10px 0;
+}
+.btn-default {
+  border: none;
+  color: #333333;
+  background-color: #fdc600;
+  border-color: #cccccc;
+}
