@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import { useDispatch } from "react-redux";
 import Header from "./components/Header";
+import SearchBar from "./components/searchBar";
 
 function App() {
   const dispatch = useDispatch();
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Header />
+      <SearchBar />
     </div>
   );
 }

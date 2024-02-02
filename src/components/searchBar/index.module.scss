@@ -1,0 +1,23 @@
+.searchBar {
+  display: flex;
+  justify-content: center;
+  background-color: #111210;
+  padding-block: 15px;
+  height: 40px;
+  button {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #fdc600;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+}
