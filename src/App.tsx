@@ -12,10 +12,6 @@ function App() {
       console.log(data, "callback-----------------");
     });
     function handleScroll() {
-      let navbar: any = document.getElementsByClassName(
-        "searchBar_searchBar__OIcL+"
-      )[0];
-      let sticky: any = navbar.offsetTop;
       if (window?.pageYOffset >= 63) {
         setSticky(true);
       } else {
