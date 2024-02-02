@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import styles from "./index.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPowerOff,
@@ -11,35 +11,30 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="{styles.header}">
-      <div className="{styles.headerTopBar}">
-        <div className="container">
-          <div className="header-login">
-            <Link to="/login">
-              <FontAwesomeIcon icon={faPowerOff} /> Login
-            </Link>
-          </div>
-
-          <div className="header-register">
-            <Link to="/register">
-              <FontAwesomeIcon icon={faSquarePlus} /> Register
-            </Link>
-          </div>
-          <div className="header-logo text-center">
-            <h2>
-              <Link to="/">
-                GL
-                <FontAwesomeIcon icon={faEarthAfrica} />
-                BO
-              </Link>
-            </h2>
-          </div>
-          <div className="header-call-to-action">
-            <a href="#" className="btn btn-default">
-              <FontAwesomeIcon icon={faPlus} /> Add Listing
-            </a>
-          </div>
+    <div className={styles.headerTopBar}>
+      <div className={styles.container}>
+        <div className={styles.login}>
+          <Link to="/login">
+            <FontAwesomeIcon icon={faPowerOff} /> Login
+          </Link>
         </div>
+        <Link to="/register">
+          <FontAwesomeIcon icon={faSquarePlus} /> Register
+        </Link>
+      </div>
+      <div className={styles.logo}>
+        <h2>
+          <Link to="/">
+            GL
+            <FontAwesomeIcon icon={faEarthAfrica} />
+            BO
+          </Link>
+        </h2>
+      </div>
+      <div className={styles.addListing}>
+        <Link to="#">
+          <FontAwesomeIcon icon={faPlus} /> Add Listing
+        </Link>
       </div>
     </div>
   );

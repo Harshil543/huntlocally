@@ -1,0 +1,75 @@
+.headerTopBar {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  .container {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    a {
+      padding-right: 20px;
+      text-decoration: none;
+      color: #333333;
+    }
+  }
+  .logo {
+    position: relative;
+    right: 53px;
+    h2 {
+      font-size: 24px;
+      margin: 0;
+      a {
+        color: #333333;
+        text-decoration: none;
+        font-size: 30px;
+        svg {
+          padding: 0 6px;
+          color: #fdc600;
+        }
+      }
+    }
+  }
+  .addListing {
+    a {
+      svg {
+        font-weight: 800;
+      }
+      text-decoration: none;
+      color: #333333;
+      font-size: 14px;
+      padding: 5px 10px;
+      background-color: #fdc600;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      line-height: 1.42857143;
+      border-radius: 3px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+.header .headerTopBar {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.btn-default {
+  border: none;
+  color: #333333;
+  background-color: #fdc600;
+  border-color: #cccccc;
+}
