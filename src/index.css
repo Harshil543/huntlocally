@@ -13,9 +13,9 @@ body {
   color: #333333;
   background-color: #ffffff;
   width: 100% !important;
-  height: auto;
-  overflow-x: hidden !important;
-  -webkit-font-smoothing: antialiased;
+  height: 1010px;
+  /* overflow-x: hidden !important; */
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 code {
